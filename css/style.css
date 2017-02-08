@@ -35,7 +35,7 @@ nav li {
 }
 
 nav a:hover {
-    color: #f2c837;
+    color: #f2c837;e
 }
 
 .selected a {
@@ -121,4 +121,38 @@ h4 {
 
 article img {
     width: 100%;
+}
+
+@media (max-width: 1020px) {
+    header, main {
+        width: 100%;
+    }
+    main {
+        flex-wrap: wrap;
+    }
+    main article {
+        width: 45%;
+        margin-bottom: 1em;
+    }
+    nav ul {
+        width: 100%;
+        justify-content: space-around;
+    }
+    h1 {
+        font-size: 6em;
+    }
+}
+
+@media (max-width: 700px) {
+    main article {
+        width: 100%;
+    }
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+        font-size: .8em;
+    }
+    h2 {
+        font-size: 1em;
+    }
 }
